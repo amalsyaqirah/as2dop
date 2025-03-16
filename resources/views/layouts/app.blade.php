@@ -14,7 +14,15 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
+    
     <body class="font-sans antialiased">
+        <!-- Add the PB Logo -->
+        <header>
+            <div class="logo">
+                <img src="{{ asset('images/pblogo.png') }}" alt="PB Logo" style="height: 50px;">
+            </div>
+        </header>
+
         <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
 
